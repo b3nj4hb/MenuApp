@@ -6,18 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class SumarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sumar);
     }
 
-    //Método ir al activity sumar
-    public void irSumar(View view){
-        Intent suma = new Intent(this, SumarActivity.class);
-        startActivity(suma);
+    // Metodo para ir al menu de inicio
+    public void IrMenu(View view) {
+        Intent inicio = new Intent(this, MainActivity.class);
+        startActivity(inicio);
     }
-
 }
